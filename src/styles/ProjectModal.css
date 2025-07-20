@@ -1,0 +1,295 @@
+/* 모달 오버레이 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+  }
+  
+  /* 모달 컨테이너 */
+  .modal-container {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* 모달 헤더 */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 3rem 1.5rem 3rem;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #F8F9FA;
+  }
+  
+  .modal-title-section {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+  }
+  
+  .modal-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .modal-close {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-close:hover {
+    background-color: #E0E0E0;
+    color: #333;
+  }
+  
+  /* 모달 바디 */
+  .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2.5rem 3rem;
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  /* 미디어 섹션 (왼쪽) */
+  .modal-media-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .showcase-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .demo-video {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 컨텐츠 섹션 (오른쪽) */
+  .modal-content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* 설명 섹션 */
+  .description-section {
+    flex: 1;
+  }
+  
+  .description-content {
+    background-color: #F8F9FA;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .description-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    white-space: pre-line;
+  }
+  
+  .tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .tech-item {
+    background-color: #E3F2FD;
+    color: #1976D2;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+  
+  .tech-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .github-btn {
+    background-color: #333;
+  }
+  
+  .github-btn:hover {
+    background-color: #555;
+    box-shadow: 0 4px 16px rgba(51, 51, 51, 0.3);
+  }
+  
+  .pdf-btn {
+    background-color: #FF5722;
+  }
+  
+  .pdf-btn:hover {
+    background-color: #E64A19;
+    box-shadow: 0 4px 16px rgba(255, 87, 34, 0.3);
+  }
+  
+  .download-btn {
+    background-color: #2196F3;
+    padding: 0;
+  }
+  
+  .download-btn:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3);
+  }
+  
+  .download-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 모달 푸터 */
+  .modal-footer {
+    padding: 1.5rem 3rem 2.5rem 3rem;
+    border-top: 1px solid #E0E0E0;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .close-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #333;
+    box-shadow: 0 4px 12px rgba(102, 102, 102, 0.3);
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .modal-overlay {
+      padding: 1rem;
+    }
+    
+    .modal-container {
+      max-height: 95vh;
+      border-radius: 16px;
+    }
+    
+    .modal-body {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    
+    .modal-header {
+      padding: 2rem;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+    
+    .modal-title-section {
+      margin-right: 0;
+    }
+    
+    .modal-close {
+      align-self: flex-end;
+    }
+    
+    .tech-stack-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }

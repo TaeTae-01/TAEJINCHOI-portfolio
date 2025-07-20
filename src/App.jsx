@@ -1,34 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react'
+
+// Components Import
+import Splash from './components/Splash'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import ProjectModal from './components/ProjectModal'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showSplash, setShowSplash] = useState(true)
+  const [selectedProject, setSelectedProject] = useState(null)
+
+  // 스플래시 화면 3초 후 숨김
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false)
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // 프로젝트 모달 열기
+  const openProjectModal = (project) => {
+    setSelectedProject(project)
+  }
+
+  // 프로젝트 모달 닫기
+  const closeProjectModal = () => {
+    setSelectedProject(null)
+  }
+
+  if (showSplash) {
+    return <Splash />
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      {/* Main Portfolio Sections */}
+      <Hero />
+      <Skills />
+      <Projects onProjectClick={openProjectModal} />
+      <Contact />
+
+      {/* Project Detail Modal */}
+      {selectedProject && (
+        <ProjectModal 
+          project={selectedProject} 
+          onClose={closeProjectModal} 
+        />
+      )}
+    </div>
   )
 }
 

@@ -1,0 +1,186 @@
+.projects {
+    background-color: #E5E5E5;
+    min-height: 100vh;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects-container {
+    background-color: white;
+    width: 95%;
+    max-width: 1300px;
+    min-height: 80vh;
+    border-radius: 32px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* PROJECTS 태그 */
+  .projects-tag {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    z-index: 10;
+  }
+  
+  .projects-tag span {
+    background-color: #50bcdf;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: #333;
+    display: inline-block;
+  }
+  
+  /* 프로젝트 소개 섹션 */
+  .projects-intro {
+    margin: 6rem 0 3rem 0;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .projects-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* 프로젝트 카드 그리드 */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin: 3rem 0;
+    padding: 0 1rem;
+  }
+  
+  /* 개별 프로젝트 카드 */
+  .project-card {
+    background-color: #F8F8F8;
+    border-radius: 24px;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* 프로젝트 이미지 */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  /* 프로젝트 내용 */
+  .project-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  /* 기술 스택 미리보기 */
+  .project-tech-preview {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid #E0E0E0;
+  }
+  
+  .tech-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .tech-tag {
+    background-color: #E3F2FD;
+    color: #1976D2;
+    padding: 0.3rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* 프로젝트 버튼 */
+  .project-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+  
+  .project-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-button:active {
+    transform: translateY(0);
+  }
