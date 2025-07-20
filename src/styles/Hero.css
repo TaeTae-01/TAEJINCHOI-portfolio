@@ -95,3 +95,107 @@
   border: 3px solid #ffffff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero-container {
+    width: 90%;
+    height: auto;
+    min-height: 70vh;
+    padding: 2rem;
+    border-radius: 24px;
+  }
+
+  .hero-navbar {
+    gap: 2rem;
+  }
+
+  .nav-item {
+    font-size: 1.1rem;
+  }
+
+  .nav-item:hover {
+    font-size: 1.3rem;
+  }
+
+  .hero-main-card {
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+  }
+
+  .main-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .profile-section {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Mobile (767px 이하) */
+@media (max-width: 767px) {
+  .hero {
+    padding: 1rem 0;
+  }
+
+  .hero-container {
+    width: 95%;
+    height: auto;
+    min-height: 60vh;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .hero-navbar {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .nav-item:hover {
+    font-size: 1.1rem;
+  }
+
+  .hero-main-card {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 16px;
+  }
+
+  .main-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-text h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .profile-section {
+    margin-top: 1.5rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -60,7 +60,7 @@ const Hero = () => {
           
           <div className="profile-section">
             <img 
-              src="public/assets/images/profile.JPG" 
+              src="/TAEJINCHOI-portfolio/assets/images/profile.JPG" 
               alt="프로필 이미지" 
               className="profile-image"
             />
