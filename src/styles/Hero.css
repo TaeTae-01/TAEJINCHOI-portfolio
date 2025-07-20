@@ -26,15 +26,14 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-bottom: 2rem;
   padding: 1rem 0;
 }
 
 .nav-item {
   background: none;
   border: none;
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 1.3rem;
+  color: #333;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
@@ -43,7 +42,7 @@
 
 .nav-item:hover {
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   transform: translateY(-2px);
 }
 

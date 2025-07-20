@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin } from 'lucide-react'
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import { SiNotion } from 'react-icons/si'
+import { Mail, Phone, School } from 'lucide-react'
+import { FaGithub, FaBookOpen   } from 'react-icons/fa'
 import '../styles/Contact.css'
 
 const Contact = () => {
@@ -19,10 +18,10 @@ const Contact = () => {
       link: "tel:+82-35700-4688"
     },
     {
-      icon: <MapPin size={24} />,
-      label: "위치",
-      value: "충청북도 청주시",
-      link: null
+      icon: <School size={24} />,
+      label: "학력",
+      value: "충북대학교 소프트웨어학부 (재학)",
+      link: "https://software.cbnu.ac.kr/"
     }
   ]
 
@@ -40,7 +39,7 @@ const Contact = () => {
       color: "#AB1F54"
     },
     {
-      icon: <FaGithub size={28} />,
+      icon: <FaBookOpen  size={28} />,
       label: "Tech Blog",
       url: "https://velog.io/@xowls000/posts",
       color: "#333"
@@ -78,7 +77,7 @@ const Contact = () => {
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h3 className="section-title lato-bold">연락처</h3>
+            <h3 className="section-title lato-bold">연락처 / 학력</h3>
             <div className="contact-info-grid">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -161,7 +160,7 @@ const Contact = () => {
         >
           <div className="footer-content">
             <p className="footer-name lato-bold">최태진 (TAE JIN CHOI)</p>
-            <p className="footer-role lato-regular">Frontend Developer</p>
+            <p className="footer-role lato-regular">Thank you for watching</p>
             <p className="footer-copyright lato-light">
               © 2025 Tae Jin Choi. All rights reserved.
             </p>

@@ -59,11 +59,6 @@
     display: inline-block;
   }
   
-  /* 연락처 정보 섹션 */
-  .contact-info-section {
-    
-  }
-  
   .contact-info-grid {
     display: flex;
     flex-direction: column;
@@ -121,12 +116,7 @@
     font-size: 1.1rem;
     color: #333;
   }
-  
-  /* 소셜 미디어 섹션 */
-  .social-section {
     
-  }
-  
   .social-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
