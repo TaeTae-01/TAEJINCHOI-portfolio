@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: <Phone size={24} />,
       label: "전화번호",
-      value: "+82-3570-4688",
+      value: "+82 10-3570-4688",
       link: "tel:+82-35700-4688"
     },
     {

@@ -31,7 +31,6 @@ const ProjectModal = ({ project, onClose }) => {
           <div className="modal-header">
             <div className="modal-title-section">
               <h2 className="modal-title lato-bold">{project.name}</h2>
-              <p className="modal-subtitle lato-regular">{project.description}</p>
             </div>
             <button className="modal-close" onClick={onClose}>
               <X size={24} />
@@ -105,7 +104,7 @@ const ProjectModal = ({ project, onClose }) => {
                       onClick={() => window.open(project.details.github, '_blank')}
                     >
                       <Github size={20} />
-                      <span className="lato-bold">GitHub 보기</span>
+                      <span className="lato-bold">GitHub Link</span>
                     </motion.button>
                   )}
 
@@ -116,25 +115,8 @@ const ProjectModal = ({ project, onClose }) => {
                     onClick={() => window.open(pdfPath, '_blank')}
                   >
                     <FileText size={20} />
-                    <span className="lato-bold">발표자료 (PDF)</span>
+                    <span className="lato-bold">발표자료</span>
                   </motion.button>
-
-                  {project.details.video && (
-                    <motion.button
-                      className="action-btn download-btn"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <a 
-                        href={project.details.video} 
-                        download 
-                        className="download-link"
-                      >
-                        <Download size={20} />
-                        <span className="lato-bold">데모영상 다운로드</span>
-                      </a>
-                    </motion.button>
-                  )}
 
                 </div>
               </div>
