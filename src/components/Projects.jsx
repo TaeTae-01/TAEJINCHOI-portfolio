@@ -9,7 +9,17 @@ const Projects = ({ onProjectClick }) => {
       description: "StudyBuddy는 학생들이 효율적으로 스터디 그룹을 형성하고 스케줄 관리를 도와주는 웹 애플리케이션입니다.",
       image: "/TAEJINCHOI-portfolio/assets/images/studdybuddyIcon.png",
       details: {
-        fullDescription: " 이 프로젝트의 핵심은 팀원들간의 불가능한 시간을 입력하면 자동으로 모든 팀원이 참가 가능한 시간을 산출해줍니다. 🏠 대시보드: 개인화된 대시보드로 활동 현황 한눈에 파악 👥 그룹 관리: 스터디 그룹 생성, 참여 및 관리 📅 일정 관리: 그룹별 일정 조율 및 캘린더 기능 🔔 알림 시스템: 실시간 그룹 요청 및 일정 알림 👤 프로필 관리: 개인 프로필 및 설정 관리",
+        fullDescription: `이 프로젝트의 핵심은 팀원들간의 불가능한 시간을 입력하면 자동으로 모든 팀원이 참가 가능한 시간을 산출해줍니다.
+        
+        🏠 대시보드: 개인화된 대시보드로 활동 현황 한눈에 파악
+
+        👥 그룹 관리: 스터디 그룹 생성, 참여 및 관리
+        
+        📅 일정 관리: 그룹별 일정 조율 및 캘린더 기능
+        
+        🔔 알림 시스템: 실시간 그룹 요청 및 일정 알림
+        
+        👤 프로필 관리: 개인 프로필 및 설정 관리`,
         techStack: ["React", "Node.js", "Firebase"],
         github: "https://github.com/taejinchoi-cbnu/StudyBuddy",
         ppt: "https://www.canva.com/design/DAGn3WDx3dU/p_m7sYcjUqOhT3UhAj8UqA/view?utm_content=DAGn3WDx3dU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d589430c",
@@ -22,7 +32,15 @@ const Projects = ({ onProjectClick }) => {
       description: "AI 기술과 Spring Boot 백엔드와 Android 앱으로 구성된 음성 기록 및 요약 서비스입니다.",
       image: "/TAEJINCHOI-portfolio/assets/images/notiIcon.png",
       details: {
-        fullDescription: "핵심 가치: 녹음을 진행하면 자동으로 텍스트 변환 및 요약 제공 AI 기반 대화형 질의응답으로 회의 내용 검색 및 분석이 서비스는 회의 후 문서 정리에 어려움을 겪는 직장인들을 위해 설계되었습니다. 업로드된 음성을 기반으로 회의 스크립트를 자동 생성하고, AI 요약본, 챗봇과의 대화를 통해 회의 내용에 대한 질의응답이 가능합니다.",
+        fullDescription: `이 프로젝트의 핵심은 녹음을 진행하면 AI 기반 텍스트 변환 및 요약 제공해주며 대화형 질의응답으로 회의 내용 검색 및 분석이 가능합니다.
+
+        🎙️ 음성 처리: 앱 내에서 직접 회의 녹음 가능
+            STT 변환: 녹음 파일을 Text로 전환하는 Speech-to-Text 기능
+        
+        🧠 스마트 요약: AI 기반 회의 내용 자동 요약
+            대화형 챗봇: 회의 내용 기반 질의응답 시스템
+            
+        🗂️ 데이터 관리: 서버 기반 데이터 보관 혹은 사용자의 기기 로컬에 보관 가능`,
         techStack: ["Kotlin", "Java", "MySQL"],
         github: "https://github.com/ujin999/NoTI",
         ppt: "https://www.canva.com/design/DAGqHTIFfh8/MRz47cBzYjHNQvYeFh_TCw/view?utm_content=DAGqHTIFfh8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he0dd656cf4",

@@ -142,13 +142,12 @@
     background-color: #F8F9FA;
     padding: 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #4CAF50;
   }
   
   .description-content p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #333;
     margin: 0;
     white-space: pre-line;
   }
@@ -163,9 +162,9 @@
     background-color: #E3F2FD;
     color: #1976D2;
     padding: 0.8rem 1rem;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     transition: transform 0.2s ease;
   }
   

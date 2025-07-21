@@ -16,6 +16,10 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+    
+ ::-webkit-scrollbar {
+   display: none;
+ }
 
 /* Lato Font Classes */
 .lato-thin {

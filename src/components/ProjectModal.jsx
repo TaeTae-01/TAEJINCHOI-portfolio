@@ -1,12 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Github, FileText, Download, Play } from 'lucide-react'
+import { X, Github, FileText, Play, Zap } from 'lucide-react'
 import '../styles/ProjectModal.css'
+import { FaReact } from 'react-icons/fa'
 
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null
-
-  // PDF 경로 (ppt → pdf 변환)
-  const pdfPath = project.details.ppt.replace('.pptx', '.pdf')
 
   return (
     <AnimatePresence>
@@ -43,12 +41,6 @@ const ProjectModal = ({ project, onClose }) => {
             {/* 프로젝트 이미지 & 동영상 섹션 */}
             <div className="modal-media-section">
               <div className="project-showcase">
-                <img 
-                  src={project.image} 
-                  alt={project.name}
-                  className="showcase-image"
-                />
-                
                 {project.details.video && (
                   <div className="video-section">
                     <h4 className="section-title lato-bold">
@@ -73,7 +65,7 @@ const ProjectModal = ({ project, onClose }) => {
               
               {/* 프로젝트 설명 */}
               <div className="description-section">
-                <h4 className="section-title lato-bold">프로젝트 소개</h4>
+                <h4 className="section-title lato-bold">💁 프로젝트 소개</h4>
                 <div className="description-content">
                   <p className="lato-regular">{project.details.fullDescription}</p>
                 </div>
@@ -81,11 +73,11 @@ const ProjectModal = ({ project, onClose }) => {
 
               {/* 기술 스택 */}
               <div className="tech-section">
-                <h4 className="section-title lato-bold">사용 기술</h4>
+                <h4 className="section-title lato-bold">사용된 주요 기술</h4>
                 <div className="tech-stack-grid">
                   {project.details.techStack.map((tech, index) => (
                     <div key={index} className="tech-item">
-                      <span className="lato-regular">{tech}</span>
+                      <span className="lato-regular-bold">{tech}</span>
                     </div>
                   ))}
                 </div>
@@ -112,7 +104,7 @@ const ProjectModal = ({ project, onClose }) => {
                     className="action-btn pdf-btn"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open(pdfPath, '_blank')}
+                    onClick={() => window.open(project.details.ppt, '_blank')}
                   >
                     <FileText size={20} />
                     <span className="lato-bold">발표자료</span>
