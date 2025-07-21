@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { Code, Database, Wrench } from 'lucide-react'
+import { Code, Database, Wrench, Library } from 'lucide-react'
 import { FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaSlack, FaFigma } from 'react-icons/fa'
-import { SiTypescript, SiMysql, SiFirebase, SiNotion } from 'react-icons/si'
+import { SiTypescript, SiMysql, SiFirebase, SiNotion, SiExpo, SiTailwindcss } from 'react-icons/si'
 import '../styles/Skills.css'
 
 const Skills = () => {
@@ -11,19 +11,21 @@ const Skills = () => {
       icon: <Code size={24} />,
       title: "LANGUAGES",
       skills: [
+        { name: "HTML + CSS", level: "고급", icon: <><FaHtml5 /><FaCss3Alt /></> },
         { name: "JavaScript", level: "중급", icon: <FaJs /> },
         { name: "TypeScript", level: "초급", icon: <SiTypescript /> },
-        { name: "C", level: "초급", icon: <Code size={20} /> },
-        { name: "HTML + CSS", level: "고급", icon: <><FaHtml5 /><FaCss3Alt /></> }
+        { name: "C", level: "초급", icon: <Code size={20} /> }
       ]
     },
     {
       id: 2,
-      icon: <Database size={24} />,
+      icon: <Library size={24} />,
       title: "LIBRARIES & FRAMEWORKS",
       skills: [
-        { name: "React.js", level: "고급", icon: <FaReact /> },
+        { name: "React", level: "고급", icon: <FaReact /> },
         { name: "React Native", level: "중급", icon: <FaReact /> },
+        { name: "Expo", level: "초급", icon: <SiExpo /> },
+        { name: "TailwindCSS", level: "초급", icon: <SiTailwindcss /> },
         { name: "Node.js", level: "초급", icon: <FaNodeJs /> }
       ]
     },
