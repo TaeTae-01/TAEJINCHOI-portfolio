@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Code, Database, Wrench, Library } from 'lucide-react'
 import { FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaSlack, FaFigma } from 'react-icons/fa'
-import { SiTypescript, SiMysql, SiFirebase, SiNotion, SiExpo, SiTailwindcss } from 'react-icons/si'
+import { SiTypescript, SiMysql, SiFirebase, SiNotion, SiExpo, SiTailwindcss, SiSupabase } from 'react-icons/si'
 import '../styles/Skills.css'
 
 const Skills = () => {
@@ -35,6 +35,7 @@ const Skills = () => {
       title: "DATABASE",
       skills: [
         { name: "MySQL", level: "중급", icon: <SiMysql /> },
+        { name: "Supabase", level: "중급", icon: <SiSupabase /> },
         { name: "Firebase", level: "중급", icon: <SiFirebase /> }
       ]
     },
